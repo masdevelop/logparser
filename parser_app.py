@@ -93,7 +93,7 @@ if __name__ == "__main__":
                 parsed = parse_line(line)
                 if len(parsed) > 0:
                     print(parsed)
-                    insert_record(parsed)
+                    #insert_record(parsed)
     except KeyboardInterrupt:
         pass
     except Exception as e:
