@@ -74,9 +74,13 @@ if __name__ == "__main__":
         f_b = open(LOG_FILE_B, 'r')
         while True:
             where_a = f_a.tell()
+            print(where_a)
             line_a = f_a.readline()
+            print(line_a)
             where_b = f_b.tell()
+            print(where_b)
             line_b = f_b.readline()
+            print(line_b)
 
             if not line_a and not line_b:
                 time.sleep(1)
@@ -92,7 +96,7 @@ if __name__ == "__main__":
                 line = line.strip()
                 parsed = parse_line(line)
                 if len(parsed) > 0:
-                    print(parsed)
+                    #print(parsed)
                     #insert_record(parsed)
     except KeyboardInterrupt:
         pass
